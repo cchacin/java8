@@ -14,7 +14,20 @@ public class Behavior {
         return total;
     }
 
+    public static int sumOdd(List<Integer> numbers) {
+        int total = 0;
+
+        for (Integer n : numbers) {
+            if(n % 2 == 1) {
+                total += n;
+            }
+        }
+
+        return total;
+    }
+
     public static void main(final String args[]) {
         System.out.println(sumAll(numbers));
+        System.out.println(sumOdd(numbers));
     }
 }
