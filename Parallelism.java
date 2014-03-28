@@ -1,5 +1,6 @@
 import java.util.*;
 import java.io.*;
+import java.util.stream.*;
 
 public class Parallelism {
 
@@ -9,8 +10,8 @@ public class Parallelism {
 
         File[] children = current.listFiles();
 
-        for(File child : children) {
-            System.out.println(child);
-        }
+        Stream.of(children).forEach(
+            file -> System.out.println(file)
+        );
     }
 }
