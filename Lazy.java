@@ -6,7 +6,7 @@ public class Lazy {
 
     public static boolean isEven(int n) {
         System.out.println("isEven: " + n);
-        return n % 2 == 1;
+        return n % 2 == 0;
     }
 
     public static int doubleIt(int n) {
@@ -25,7 +25,7 @@ public class Lazy {
         // the first one greater than 5
 
         for (int n : numbers) {
-            if(n % 2 == 1) {
+            if(n % 2 == 0) {
                 int n2 = n * 2;
                 if (n2 > 5) {
                     System.out.println(n2);
@@ -51,10 +51,12 @@ public class Lazy {
 
         System.out.println(l3.get(0));
 
+        System.out.println(
         numbers.stream()
                .filter(Lazy::isEven)
                .map(Lazy::doubleIt)
                .filter(Lazy::isGT5)
-               .findFirst();
+               .findFirst()
+        );
     }
 }
