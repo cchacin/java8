@@ -57,6 +57,7 @@ public class Lazy {
                .map(Lazy::doubleIt)
                .filter(Lazy::isGT5)
                .findFirst()
+               .get()
         );
     }
 }
