@@ -11,6 +11,62 @@ public class NotSyntaxSugar {
             }
         );
 
+        th = new Thread(
+            new Runnable() {
+                public void run() {
+                    System.out.println("Thread");
+                }
+            }
+        );
+
+        th = new Thread(
+            new Runnable() {
+                public void run() {
+                    System.out.println("Thread");
+                }
+            }
+        );
+
+        th = new Thread(
+            new Runnable() {
+                public void run() {
+                    System.out.println("Thread");
+                }
+            }
+        );
+
+        th = new Thread(
+            new Runnable() {
+                public void run() {
+                    System.out.println("Thread");
+                }
+            }
+        );
+
+        th = new Thread(
+            new Runnable() {
+                public void run() {
+                    System.out.println("Thread");
+                }
+            }
+        );
+
+        th = new Thread(
+            new Runnable() {
+                public void run() {
+                    System.out.println("Thread");
+                }
+            }
+        );
+
+        th = new Thread(
+            new Runnable() {
+                public void run() {
+                    System.out.println("Thread");
+                }
+            }
+        );
+
         th.start();
         th.join();
 
