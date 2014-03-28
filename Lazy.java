@@ -8,5 +8,15 @@ public class Lazy {
 
         // Take only a even numbers, double them and print
         // the first one greater than 5
+
+        for (int n : numbers) {
+            if(n % 2 == 1) {
+                int n2 = n * 2;
+                if (n2 > 5) {
+                    System.out.println(n2);
+                    break;
+                }
+            }
+        }
     }
 }
