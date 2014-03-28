@@ -50,5 +50,7 @@ public class Lazy {
         }
 
         System.out.println(l3.get(0));
+
+        numbers.stream().filter(Lazy::isEven).map(Lazy::doubleIt).filter(Lazy::isGT5);
     }
 }
