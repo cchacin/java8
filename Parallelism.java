@@ -20,8 +20,9 @@ public class Parallelism {
 
         File[] children = current.listFiles();
 
-        Stream.of(children).forEach(
-            file -> processFile(file)
+        Stream.of(children)
+              .parallel()
+              .forEach(file -> processFile(file)
         );
     }
 }
