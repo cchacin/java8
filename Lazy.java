@@ -6,5 +6,7 @@ public class Lazy {
 
     public static void main(final String args[]) {
 
+        // Take only a even numbers, double them and print
+        // the first one greater than 5
     }
 }
