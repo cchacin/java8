@@ -4,6 +4,16 @@ import java.util.stream.*;
 
 public class Parallelism {
 
+    public static void processFile(File file) {
+
+        try {
+            Thread.sleep(1000);
+        } catch(Exception e) {
+        }
+
+        System.out.println(file);
+    }
+
     public static void main(final String[] args) {
 
         File current = new File(".");
@@ -11,7 +21,7 @@ public class Parallelism {
         File[] children = current.listFiles();
 
         Stream.of(children).forEach(
-            file -> System.out.println(file)
+            file -> processFile(file)
         );
     }
 }
