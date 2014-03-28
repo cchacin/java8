@@ -11,66 +11,54 @@ public class NotSyntaxSugar {
             }
         );
 
-        th = new Thread(
-            new Runnable() {
-                public void run() {
-                    System.out.println("Thread");
-                }
-            }
-        );
-
-        th = new Thread(
-            new Runnable() {
-                public void run() {
-                    System.out.println("Thread");
-                }
-            }
-        );
-
-        th = new Thread(
-            new Runnable() {
-                public void run() {
-                    System.out.println("Thread");
-                }
-            }
-        );
-
-        th = new Thread(
-            new Runnable() {
-                public void run() {
-                    System.out.println("Thread");
-                }
-            }
-        );
-
-        th = new Thread(
-            new Runnable() {
-                public void run() {
-                    System.out.println("Thread");
-                }
-            }
-        );
-
-        th = new Thread(
-            new Runnable() {
-                public void run() {
-                    System.out.println("Thread");
-                }
-            }
-        );
-
-        th = new Thread(
-            new Runnable() {
-                public void run() {
-                    System.out.println("Thread");
-                }
-            }
-        );
-
         th.start();
         th.join();
 
         Thread lambdaThread = new Thread(
+            () -> System.out.println("lambdaThread")
+        );
+
+        lambdaThread = new Thread(
+            () -> System.out.println("lambdaThread")
+        );
+
+        lambdaThread = new Thread(
+            () -> System.out.println("lambdaThread")
+        );
+
+        lambdaThread = new Thread(
+            () -> System.out.println("lambdaThread")
+        );
+
+        lambdaThread = new Thread(
+            () -> System.out.println("lambdaThread")
+        );
+
+        lambdaThread = new Thread(
+            () -> System.out.println("lambdaThread")
+        );
+
+        lambdaThread = new Thread(
+            () -> System.out.println("lambdaThread")
+        );
+
+        lambdaThread = new Thread(
+            () -> System.out.println("lambdaThread")
+        );
+
+        lambdaThread = new Thread(
+            () -> System.out.println("lambdaThread")
+        );
+
+        lambdaThread = new Thread(
+            () -> System.out.println("lambdaThread")
+        );
+
+        lambdaThread = new Thread(
+            () -> System.out.println("lambdaThread")
+        );
+
+        lambdaThread = new Thread(
             () -> System.out.println("lambdaThread")
         );
 
