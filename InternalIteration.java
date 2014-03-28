@@ -6,6 +6,6 @@ public class InternalIteration {
 
     public static void main(final String args[]) {
 
-        numbers.forEach((Integer n) -> System.out.println(n));
+        numbers.forEach(System.out::println);
     }
 }
