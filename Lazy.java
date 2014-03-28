@@ -5,17 +5,17 @@ public class Lazy {
     private static final List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
 
     public static boolean isEven(int n) {
-        System.out.println(n);
+        System.out.println("isEven: " + n);
         return n % 2 == 1;
     }
 
     public static int doubleIt(int n) {
-        System.out.println(n);
+        System.out.println("doubleIt: " + n);
         return n * 2;
     }
 
     public static boolean isGT5(int n) {
-        System.out.println(n);
+        System.out.println("isGT5: " + n);
         return n > 5;
     }
 
