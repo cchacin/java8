@@ -49,15 +49,13 @@ public class Lazy {
             if(isGT5(n)) l3.add(n);
         }
 
-        System.out.println(l3.get(0));
-
         System.out.println(
-        numbers.stream()
-               .filter(Lazy::isEven)
-               .map(Lazy::doubleIt)
-               .filter(Lazy::isGT5)
-               .findFirst()
-               .get()
+            numbers.stream()
+                   .filter(Lazy::isEven)
+                   .map(Lazy::doubleIt)
+                   .filter(Lazy::isGT5)
+                   .findFirst()
+                   .orElse(0)
         );
     }
 }
